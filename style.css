@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/*.container {
+    max-width: 1100px;
+    margin: auto;
+}*/
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(230, 129, 230);
+    border: 5px solid white
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    width: 80%;
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.nav-link ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link ul a:hover {
+    color: blue;
+}
+
+.information {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+    z-index: -1;
+}
+
+.mobile {
+    width: 300px;
+    margin-left: 260px;
+    margin-top: 250px;
+
+}
+
+.feature {
+    display: flex;
+    position: absolute;
+    color: black;
+}
+
+.feature img {
+    width: 40px;
+    margin-left: 200px;
+    margin-top: 100px;
+
+}
+
+.feature div {
+    margin-top: 100px;
+}
+
+.one {
+    margin-top: 100px;
+    left: 140px;
+    transform: rotate(-90deg);
+}
+
+.two {
+    top: 370px;
+    right: 415px;
+    transform: rotate(-180deg)
+}
+
+.three {
+    left: 410px;
+    top: 280px;
+
+}
+
+.four {
+    top: 530px;
+    left: 260px;
+    transform: rotate(-270deg)
+}
+
+.control {
+    position: absolute;
+    right: 25%;
+    top: 43%;
+    transform: translateY(-20%);
+    text-align: center;
+    color: black;
+}
+
+.control h3 {
+    margin: 15px 0;
+}
+
+#down {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#up {
+    cursor: pointer;
+
+    transform: rotate(180deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 400px solid black;
+    border-right: 400px solid rgb(230, 129, 230);
+    border-bottom: 400px solid black;
+    border-left: 400px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
